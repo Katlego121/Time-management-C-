@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ST10104140_POE_Katlego_Mononyane.props" />
+</Project>

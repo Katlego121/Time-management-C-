@@ -1,0 +1,41 @@
+﻿@page
+@model ST10104140_POE_Katlego_Mononyane.Pages.DisplayModel
+@{
+}
+
+<h2>Modules</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Module Code</th>
+            <th>Module Name</th>
+            <th>Credits</th>
+            <th>Hours Per Week</th>
+            <th>Weeks</th>
+            <th>Start of Semester</th>
+            <th>Self Study Hours</th>
+            <th>Calculated Self Study Hours</th>
+            <th>Calculated Remaining Hours</th>
+            <!-- Add other table headers for additional properties -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var module in Model.Modules)
+        {
+            <tr>
+                <td>@module.ModuleCode</td>
+                <td>@module.ModuleName</td>
+                <td>@module.Credits</td>
+                <td>Hours Per Week</td>
+                <td>Weeks</td>
+                <td>Start of Semester</td>
+                <td>Self Study Hours</td>
+                <td>Calculated Self Study Hours</td>
+                <td>Calculated Remaining Hours</td>
+                <!-- Add other table cells for additional properties -->
+            </tr>
+        }
+    </tbody>
+</table>
+

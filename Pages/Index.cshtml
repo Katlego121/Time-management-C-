@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="signup-container">
+    <form method="post">
+        <h3>Register</h3>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="login">Login here</a></p>
+</div>
+
+<style>
+    .signup-container {
+        align-items:center;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .signup-container h3 {
+            text-align: center;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="number"],
+        .signup-container input[type="date"],
+        .signup-container input[type="password"],
+        .signup-container input[type="email"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .signup-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 20px 0;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .signup-container a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+            .signup-container a:hover {
+                text-decoration: underline;
+            }
+</style>
